@@ -6,6 +6,12 @@ internal class Program
     {
         Console.WriteLine("Hello, World!");
 
+        DbTest();
+    }
+    private async static void DbTest()
+    {
+
         var db = new GetigDbContext();
+        await db.Database.EnsureCreatedAsync();
     }
 }

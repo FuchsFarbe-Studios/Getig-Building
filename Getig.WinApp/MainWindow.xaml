@@ -4,6 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid />
+        Title="MainWindow" Height="640" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Please enter the language Details below:"
+                   FontSize="16" FontWeight="Bold" />
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <TextBlock Text="Language Name:" />
+            <TextBox x:Name="txtLanguageName" />
+            <Button Content="Add Language" Click="HandleLanguageSubmit"
+                    Margin="0,10,0,0" />
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" x:Name="txtResult" />
+    </Grid>
 </Window>

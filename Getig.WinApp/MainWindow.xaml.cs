@@ -11,5 +11,10 @@ namespace Getig.WinApp
         {
             InitializeComponent();
         }
+        private void HandleLanguageSubmit(object sender, RoutedEventArgs e)
+        {
+            // LanguageService _service = new LanguageService(yourDbContext);
+            // var createdLanguage = await _service.AddLanguageAsync(new Language { Name = txtLanguageName.Text });
+        }
     }
 }

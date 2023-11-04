@@ -1,8 +1,8 @@
-﻿namespace Getig.Models.Language
+﻿namespace Getig.Models.Lang
 {
     public class GrammarRuleElement
     {
-        public int GrammarRuleId { get; set; }
+        public Guid GrammarRuleId { get; set; }
         public GrammarRule GrammarRule { get; set; }
         public int ElementId { get; set; }
         public Element Element { get; set; }

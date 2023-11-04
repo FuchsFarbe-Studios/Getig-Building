@@ -1,4 +1,4 @@
-﻿namespace Getig.Models.Language
+﻿namespace Getig.Models.Lang
 {
     public class Element
     {
