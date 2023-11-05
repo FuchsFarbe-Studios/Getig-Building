@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Getig.Models\Getig.Models.csproj"/>
+        <ProjectReference Include="..\Getig.Services\Getig.Services.csproj" />
     </ItemGroup>
 
 </Project>

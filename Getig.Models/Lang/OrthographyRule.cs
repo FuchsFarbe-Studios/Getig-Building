@@ -7,7 +7,7 @@
     public class OrthographyRule
     {
         public int OrthographyRuleId { get; set; }
-        public string MatchPattern { get; set; }
+        public string Pronunciation { get; set; }
         public string Replacement { get; set; }
         public int ConLangId { get; set; }
         public ConLang ConLang { get; set; }
