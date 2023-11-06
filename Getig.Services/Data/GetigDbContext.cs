@@ -127,10 +127,17 @@ namespace Getig.Services.Data
 
             modelBuilder.Entity<Phoneme>(entity =>
                                          {
-                                             entity.HasKey(e => e.PhonemeId);
+                                             entity.HasKey(e => new {e.ConLangId, e.PhonemeId });
                                              entity.Property(e => e.Sound)
                                                    .IsRequired()
                                                    .HasMaxLength(50);
+                                             entity.HasOne(p => p.ConLang)
+                                                   .WithMany()
+                                                   .HasForeignKey(p => p.ConLangId);
+                                             entity.HasOne(p => p.LkPhoneme)
+                                                   .WithOne()
+                                                   .HasForeignKey<Phoneme>(p => p.PhonemeId);
+
                                          });
 
             modelBuilder.Entity<Syllable>(entity =>
@@ -181,8 +188,10 @@ namespace Getig.Services.Data
                                                         entity.Property(e => e.Order).IsRequired();
                                                     });
 
-            modelBuilder.Entity<LkPhoneme>()
-                        .ToTable("LkPhonemes");
+            modelBuilder.Entity<LkPhoneme>(entity =>
+                                           {
+                                               entity.ToTable("LkPhonemes");
+                                           });
 
             modelBuilder.Entity<LkVowel>()
                         .ToTable("LkVowels");

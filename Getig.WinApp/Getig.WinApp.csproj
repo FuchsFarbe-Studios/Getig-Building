@@ -3,13 +3,21 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net6.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Getig.Models\Getig.Models.csproj"/>
         <ProjectReference Include="..\Getig.Services\Getig.Services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="Pages\LanguageConstruction.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
     </ItemGroup>
 
 </Project>

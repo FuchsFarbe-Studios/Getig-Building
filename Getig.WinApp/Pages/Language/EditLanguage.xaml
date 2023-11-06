@@ -1,13 +1,11 @@
-﻿<Page x:Class="Getig.WinApp.LanguageConstruction"
+﻿<Page x:Class="Getig.WinApp.Pages.Language.EditLanguage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:Getig.WinApp"
+      xmlns:local="clr-namespace:Getig.WinApp.Pages.Language"
       mc:Ignorable="d"
-      Title="Language Construction"
-      Height="640"
-      Width="840">
+      Title="EditLanguage" Height="450" Width="800">
     <Grid>
         
     </Grid>

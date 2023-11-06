@@ -6,12 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getig.Services", "Getig.Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getig.WinApp", "Getig.WinApp\Getig.WinApp.csproj", "{430952FB-7BB7-4429-A422-E8FA67FA3EBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getig.WebApp.Server", "Getig.WebApp\Server\Getig.WebApp.Server.csproj", "{EEE523D8-D6BE-45F8-9C51-F901D06F06B0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getig.WebApp.Client", "Getig.WebApp\Client\Getig.WebApp.Client.csproj", "{35AA6958-2574-4F9B-8B94-E534C2B4B136}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getig.WebApp.Shared", "Getig.WebApp\Shared\Getig.WebApp.Shared.csproj", "{02BE19DC-5529-4E3B-B64B-081A0F1B183A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,14 +24,5 @@ Global
 		{430952FB-7BB7-4429-A422-E8FA67FA3EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{430952FB-7BB7-4429-A422-E8FA67FA3EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{430952FB-7BB7-4429-A422-E8FA67FA3EBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EEE523D8-D6BE-45F8-9C51-F901D06F06B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEE523D8-D6BE-45F8-9C51-F901D06F06B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEE523D8-D6BE-45F8-9C51-F901D06F06B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35AA6958-2574-4F9B-8B94-E534C2B4B136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35AA6958-2574-4F9B-8B94-E534C2B4B136}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35AA6958-2574-4F9B-8B94-E534C2B4B136}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02BE19DC-5529-4E3B-B64B-081A0F1B183A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02BE19DC-5529-4E3B-B64B-081A0F1B183A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02BE19DC-5529-4E3B-B64B-081A0F1B183A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

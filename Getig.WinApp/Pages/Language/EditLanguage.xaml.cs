@@ -1,16 +1,16 @@
 ﻿// Getig-Building
-// LanguageConstruction.xaml.cs
+// EditLanguage.xaml.cs
 // FuchsFarbe Studios 2023
 // Oliver MacDougall
-// Modified: 05-11-2023
+// Modified: 06-11-2023
 
 using System.Windows.Controls;
 
-namespace Getig.WinApp
+namespace Getig.WinApp.Pages.Language
 {
-    public partial class LanguageConstruction : Page
+    public partial class EditLanguage : Page
     {
-        public LanguageConstruction()
+        public EditLanguage()
         {
             InitializeComponent();
         }

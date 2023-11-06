@@ -1,4 +1,6 @@
-﻿namespace Getig.Models.Lang
+﻿using Getig.Models.Lookups;
+
+namespace Getig.Models.Lang
 {
     /// <summary>
     ///     Represents a phoneme, the smallest unit of sound, in a language.
@@ -9,6 +11,8 @@
         public string Sound { get; set; }
         public int ConLangId { get; set; }
         public ConLang ConLang { get; set; }
+
+        public LkPhoneme LkPhoneme { get; set; }
     }
 
 }

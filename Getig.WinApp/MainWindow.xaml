@@ -3,27 +3,32 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Getig.WinApp"
         mc:Ignorable="d"
         Title="Getig Application"
         Height="640"
-        Width="840"
+        Width="1280"
         Loaded="Window_Loaded"
-        Closing="OnClosing">
-    <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <TextBlock Text="Please enter the language Details below:"
-                   FontSize="16" FontWeight="Bold" />
-
-        <StackPanel Grid.Row="1" Margin="10">
-            <TextBox Name="TxtLanguageName" Text="{Binding Path=Name}" />
-            <Button Content="Add Language" Click="HandleLanguageSubmit"
-                    Margin="0,10,0,0" />
-        </StackPanel>
-
-        <TextBlock Grid.Row="2" x:Name="txtResult" />
-    </Grid>
+        Closed="OnClosed">
+    <Border BorderBrush="LightSlateGray" CornerRadius="10">
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="128"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource LblH1}" Margin="10">LOGO</Label>
+            <Label Grid.Row="0" Grid.Column="1" Style="{StaticResource LblH1}" Name="LblTitle">TITLE</Label>
+            <StackPanel Grid.Row="1" Grid.Column="0">
+                <RadioButton Style="{StaticResource ResourceKey={x:Type RadioButton}}" Click="btnHomePage_Click">Home</RadioButton>
+                <RadioButton Style="{StaticResource ResourceKey={x:Type RadioButton}}" Click="btnLangPage_Click">Language</RadioButton>
+            </StackPanel>
+            <Border Style="{StaticResource FrameBorder}" Grid.Row="1" Grid.Column="1" >
+                <Frame NavigationUIVisibility="Hidden" Name="DisplayFrame" VerticalAlignment="Top" HorizontalAlignment="Left" />
+            </Border>
+        </Grid>
+    </Border>
 </Window>
